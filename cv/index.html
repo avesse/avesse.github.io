@@ -64,7 +64,7 @@
       top: 0; left: 0;
       width: var(--sidebar-w);
       height: 100vh;
-      height: 100dvh;
+      height: var(--vh, 100vh);
       background: var(--surface);
       border-right: 1px solid var(--border);
       display: flex;
@@ -311,7 +311,9 @@
     .overlay {
       display: none;
       position: fixed;
-      inset: 0;
+      top: 0; left: 0; right: 0;
+      height: 100vh;
+      height: var(--vh, 100vh);
       background: rgba(0,0,0,0.75);
       z-index: 40;
     }
@@ -332,7 +334,7 @@
 
       #main { margin-left: 0; }
 
-      .content-wrap { padding: 2rem 1.5rem; }
+      .content-wrap { padding: 4.5rem 1.5rem 2rem; }
     }
 
     /* ── Print ── (PDF generation forces light theme + compact layout) */
@@ -589,6 +591,14 @@
 </main>
 
 <script>
+  // Track real visible viewport height (iOS Safari URL bar collapses on scroll)
+  function setVH() {
+    document.documentElement.style.setProperty('--vh', window.innerHeight + 'px');
+  }
+  setVH();
+  window.addEventListener('resize', setVH);
+  window.addEventListener('orientationchange', setVH);
+
   const burger = document.getElementById('burger');
   const sidebar = document.getElementById('sidebar');
   const overlay = document.getElementById('overlay');
