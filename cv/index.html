@@ -64,12 +64,14 @@
       top: 0; left: 0;
       width: var(--sidebar-w);
       height: 100vh;
+      height: 100dvh;
       background: var(--surface);
       border-right: 1px solid var(--border);
       display: flex;
       flex-direction: column;
       z-index: 50;
       overflow-y: auto;
+      padding-bottom: env(safe-area-inset-bottom);
     }
 
     .nav-brand {
@@ -285,7 +287,8 @@
     .burger {
       display: none;
       position: fixed;
-      top: 1rem; right: 1rem;
+      top: max(1rem, env(safe-area-inset-top, 0px));
+      right: max(1rem, env(safe-area-inset-right, 0px));
       z-index: 200;
       background: var(--surface);
       border: 1px solid var(--border);
@@ -293,6 +296,7 @@
       cursor: pointer;
       flex-direction: column;
       gap: 4px;
+      transform: translateZ(0);
     }
 
     .burger span {
