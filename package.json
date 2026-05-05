@@ -1,0 +1,12 @@
+{
+  "name": "avesse.net",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:cv": "node scripts/build-cv.mjs",
+    "build:cv:html": "node scripts/build-cv.mjs --skip-pdf"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}

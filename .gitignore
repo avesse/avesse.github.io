@@ -1,3 +1,7 @@
 .claude/
 transfer/
 CLAUDE.md
+mockups/
+node_modules/
+local-content/
+.DS_Store
