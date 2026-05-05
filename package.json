@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build:cv": "node scripts/build-cv.mjs",
-    "build:cv:html": "node scripts/build-cv.mjs --skip-pdf"
+    "build:cv:html": "node scripts/build-cv.mjs --skip-pdf",
+    "watch:cv": "node --watch-path=local-content --watch-path=scripts scripts/build-cv.mjs"
   },
   "dependencies": {
     "marked": "^15.0.0"

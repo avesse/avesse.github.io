@@ -1,6 +1,4 @@
-# John Murray - CV
-
-## Staff Engineer | Technical Lead
+# John Murray - Staff Engineer | Technical Lead
 
 Software engineer & technical lead with 18 years' professional experience. 
 
@@ -9,8 +7,8 @@ Deep expertise and broad experience in software engineering. Curious, optimistic
 ### Experience
 
 - 13y Hands-on software engineering
-- 10y Leading teams
-- 5y CTO/Founding Engineer of a high-growth startup
+- 10y Leadership roles
+- 5y Startup CTO/Founding Engineer
 - 2y Applied AI
 
 ### Expertise
@@ -22,13 +20,12 @@ Deep expertise and broad experience in software engineering. Curious, optimistic
 - Applied AI
 - Product Management
 
-Main technologies: TypeScript, NodeJS, Python, C#, Claude Code, PostgreSQL, AWS. 
+**Main technologies:** TypeScript, NodeJS, Python, C#, Claude Code, PostgreSQL, AWS.
 
 ### Personal Details
 
+- Contact: hi@avesse.net | [linkedin](https://linkedin.com/in/jmurrayza)
 - Residence: Stockholm, Sweden
-- Contact: hi@avesse.net | linkedin.com/in/jmurrayza
-- Permanent resident in Sweden
 
 # Career
 
@@ -98,7 +95,7 @@ _Feb 2008 - Jan 2011_
 
 # Recent Projects & Achievements
 
-## Klarna (2022-2026)
+## Klarna - 2022-2026
 
 ### Partner API Governance Platform
 
@@ -118,13 +115,13 @@ Garbage in, garbage out - reliable RAG-based AI systems require quality data wit
 
 I was a leading contributor in creating Klarna's internal knowledge graph, bringing together many different data sources and establishing the framework and tools for AI-friendly data management. I led the team responsible for data modeling, shipping UI- and AI-assisted data modeling and governance tools. This work enabled many AI-enabled products, including Klarna's internal AI assistant, and the deprecation of several 3rd party SaaS tools. 
 
-## Leadhome (2016-2021)
+## Leadhome - 2016-2021
 
-Leadhome is a proptech startup, combining humans and technology in a unique way to deliver a superior service to property buyers and sellers at a much-reduced cost. I joined as employee #1 in 2016. I built the MVP as founding engineer, getting us to first revenue, then built and led the engineering/product/data team as CTO. 
+Leadhome is a proptech startup, combining humans and technology in a unique way to deliver a superior service to property buyers and sellers at a much-reduced cost. I joined as employee #1 in 2016, built the MVP as founding engineer - getting us to first revenue - then built and led the engineering/product/data team as CTO. 
 
-My proudest achievement is the quality of the team we built. By 2020 it was a team of 25 engineers, designers, and data analysts - lean, cross-functional, innovative, driven and hyper-focused on customers, delivering products fast and of exceptional quality. In terms of technology, we were far ahead of our local competitors, and nearly on par with the best in the US and UK (the leading proptech markets at the time), but with a fraction of the capital.
+My proudest achievement is the quality of the team we built. By 2020 it was a team of 25 engineers, designers, and data analysts - lean, cross-functional, innovative, and hyper-focused on customers, delivering products fast and of exceptional quality. In terms of technology, we were far ahead of our local competitors, and nearly on par with the best in the US and UK (the leading proptech markets at the time), but with a fraction of the capital.
 
-Key products:
+**Key products:**
 
 ### Osmosis
 
@@ -132,10 +129,12 @@ End-to-end platform for property brokers - coordinates entire property sale life
 
 ### Simpli
 
-Self-service portal for property buyers & sellers, providing full visibility and control, without losing the client-broker relationship. Key feature is online viewing booking, fully integrated with the broker and seller's calendar (think Calendly, but with 3 parties to coordinate) - 167k viewings booked in 2018-2019 without the back-and-forth. Includes fully online mortgate orgination and pre-approval with no paperwork. CSAT score of 84. 
+Self-service portal for property buyers & sellers, providing full visibility and control, without losing the client-broker relationship. Key features include online viewing booking, fully integrated with the broker and seller's calendar (think Calendly, but with 3 parties to coordinate) and online mortgage orgination and pre-approval with no paperwork, integrated with major banks. CSAT score of 84. 
 
 
 # Testimonials
+
+_Contactable references available on request_
 
 ### Co-founder of Leadhome
 

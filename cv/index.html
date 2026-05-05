@@ -346,46 +346,59 @@
       #main { margin-left: 0; }
       .content-wrap { padding: 0; max-width: 100%; }
 
-      body { font-size: 8.75pt; line-height: 1.4; }
+      body { font-size: 9pt; line-height: 1.4; }
 
       section {
         padding-bottom: 0;
-        margin-bottom: 0.9rem;
+        margin-bottom: 0.35rem;
         border-bottom: none;
       }
       section:last-child { padding-bottom: 0; }
 
       h1 {
         color: #111;
-        font-size: 0.85rem;
-        margin: 0 0 0.5rem;
+        font-size: 0.95rem;
+        margin: 0 0 0.7rem;
       }
 
-      h2 { font-size: 0.85rem; margin: 0.75rem 0 0; }
-      h3 { font-size: 0.7rem; margin: 0.5rem 0 0.2rem; }
+      /* H2 keeps a touch of padding below */
+      h2 { font-size: 0.85rem; margin: 0.45rem 0 0.25rem; }
+      h3 { font-size: 0.72rem; margin: 0.55rem 0 0.15rem; color: --var(--text); }
 
-      p { margin-bottom: 0.3rem; }
-      ul { margin-bottom: 0.35rem; padding-left: 1rem; }
-      li { margin-bottom: 0.02rem; }
+      /* Body paragraphs slightly smaller, with breathing room between */
+      p { font-size: 0.78rem; margin-bottom: 0.32rem; }
+      ul { margin-bottom: 0.32rem; padding-left: 1rem; margin-left: 1rem; margin-right: 1rem; }
+      li { font-size: 0.78rem; margin-bottom: 0.03rem; }
 
-      .period { margin-bottom: 0.2rem; font-size: 0.65rem; }
+      .period { margin-bottom: 0.15rem; font-size: 0.7rem; font-style: italic; }
 
-      table { margin: 0.15rem 0 0.55rem; }
-      table th, table td { padding: 0.1rem 1rem 0.1rem 0; font-size: 0.72rem; }
+      table { margin: 0.08rem 0 0.25rem; }
+      table th, table td { padding: 0.06rem 1rem 0.06rem 0; font-size: 0.72rem; }
       table th { font-size: 0.62rem; }
 
-      blockquote { margin: 0.35rem 0 0.7rem; padding: 0 0 0 0.85rem; }
-      blockquote p { font-size: 0.72rem; line-height: 1.5; margin-bottom: 0.25rem; }
+      /* Testimonials larger, tightly packed */
+      blockquote { margin: 0.8rem 0 0.8rem; padding: 0 0 0 0.85rem; }
+      blockquote p { font-size: 0.8rem; line-height: 1.4; margin-bottom: 0.2rem; }
 
       /* Two-column lists in the intro to save space */
       #john-murray ul { columns: 2; column-gap: 1.5rem; }
+      #john-murray h3 { margin-top: 0.7rem; }
+
+      #career h1 { margin-top: 1.3rem; }
+
+      #recent-projects h2 { margin-top: 1.1rem; }
+      #recent-projects p { font-size: 0.72rem; margin-bottom: 0.5rem; }
 
       a { color: #111; }
 
       table, blockquote { page-break-inside: avoid; }
       h2, h3 { page-break-after: avoid; }
 
-      @page { size: A4; margin: 1.2cm 1.4cm; }
+      /* Each major section starts a new page (intro+career flow together) */
+      #recent-projects { page-break-before: always; }
+      #testimonials { page-break-before: always; }
+
+      @page { size: A4; margin: 1.6cm 1.8cm; }
     }
   </style>
 </head>
@@ -417,15 +430,14 @@
 
 <main id="main">
   <div class="content-wrap">
-<section id="john-murray"><h1 id="john-murray">John Murray <span class="title-suffix">— CV</span></h1>
-<h2>Staff Engineer | Technical Lead</h2>
+<section id="john-murray"><h1 id="john-murray">John Murray <span class="title-suffix">— Staff Engineer | Technical Lead</span></h1>
 <p>Software engineer &amp; technical lead with 18 years&#39; professional experience. </p>
 <p>Deep expertise and broad experience in software engineering. Curious, optimistic and pragmatic. I love building and enabling others to build. </p>
 <h3>Experience</h3>
 <ul>
 <li>13y Hands-on software engineering</li>
-<li>10y Leading teams</li>
-<li>5y CTO/Founding Engineer of a high-growth startup</li>
+<li>10y Leadership roles</li>
+<li>5y Startup CTO/Founding Engineer</li>
 <li>2y Applied AI</li>
 </ul>
 <h3>Expertise</h3>
@@ -437,12 +449,11 @@
 <li>Applied AI</li>
 <li>Product Management</li>
 </ul>
-<p>Main technologies: TypeScript, NodeJS, Python, C#, Claude Code, PostgreSQL, AWS. </p>
+<p><strong>Main technologies:</strong> TypeScript, NodeJS, Python, C#, Claude Code, PostgreSQL, AWS.</p>
 <h3>Personal Details</h3>
 <ul>
+<li>Contact: <a href="mailto:hi@avesse.net">hi@avesse.net</a> | <a href="https://linkedin.com/in/jmurrayza">linkedin</a></li>
 <li>Residence: Stockholm, Sweden</li>
-<li>Contact: <a href="mailto:hi@avesse.net">hi@avesse.net</a> | linkedin.com/in/jmurrayza</li>
-<li>Permanent resident in Sweden</li>
 </ul>
 </section><section id="career"><h1 id="career">Career</h1>
 <h2>Klarna <span class="role">— Lead Engineer &amp; Engineering Manager</span></h2>
@@ -530,7 +541,7 @@
 </tr>
 </tbody></table>
 </section><section id="recent-projects"><h1 id="recent-projects">Recent Projects &amp; Achievements</h1>
-<h2>Klarna (2022-2026)</h2>
+<h2>Klarna <span class="role">— 2022-2026</span></h2>
 <h3>Partner API Governance Platform</h3>
 <p class="period">2025 - Present</p>
 <p>Klarna provides APIs to merchants and acquiring partners to integrate its payment methods. Several 100s of engineers contribute to these APIs, making governance a challenge. </p>
@@ -540,15 +551,16 @@
 <p class="period">2023 - 2024</p>
 <p>Garbage in, garbage out - reliable RAG-based AI systems require quality data with a consistent ontology &amp; data model. </p>
 <p>I was a leading contributor in creating Klarna&#39;s internal knowledge graph, bringing together many different data sources and establishing the framework and tools for AI-friendly data management. I led the team responsible for data modeling, shipping UI- and AI-assisted data modeling and governance tools. This work enabled many AI-enabled products, including Klarna&#39;s internal AI assistant, and the deprecation of several 3rd party SaaS tools. </p>
-<h2>Leadhome (2016-2021)</h2>
-<p>Leadhome is a proptech startup, combining humans and technology in a unique way to deliver a superior service to property buyers and sellers at a much-reduced cost. I joined as employee #1 in 2016. I built the MVP as founding engineer, getting us to first revenue, then built and led the engineering/product/data team as CTO. </p>
-<p>My proudest achievement is the quality of the team we built. By 2020 it was a team of 25 engineers, designers, and data analysts - lean, cross-functional, innovative, driven and hyper-focused on customers, delivering products fast and of exceptional quality. In terms of technology, we were far ahead of our local competitors, and nearly on par with the best in the US and UK (the leading proptech markets at the time), but with a fraction of the capital.</p>
-<p>Key products:</p>
+<h2>Leadhome <span class="role">— 2016-2021</span></h2>
+<p>Leadhome is a proptech startup, combining humans and technology in a unique way to deliver a superior service to property buyers and sellers at a much-reduced cost. I joined as employee #1 in 2016, built the MVP as founding engineer - getting us to first revenue - then built and led the engineering/product/data team as CTO. </p>
+<p>My proudest achievement is the quality of the team we built. By 2020 it was a team of 25 engineers, designers, and data analysts - lean, cross-functional, innovative, and hyper-focused on customers, delivering products fast and of exceptional quality. In terms of technology, we were far ahead of our local competitors, and nearly on par with the best in the US and UK (the leading proptech markets at the time), but with a fraction of the capital.</p>
+<p><strong>Key products:</strong></p>
 <h3>Osmosis</h3>
 <p>End-to-end platform for property brokers - coordinates entire property sale lifecycle between brokers, clients, support teams and service providers - calendar management, automatic valuations, marketing tools, contract &amp; transfer handling, analytics, 3rd-party integrations and more. Compared to industry average, brokers using Osmosis sell on average 4x more properties, 31% faster per sale, with 40% lower cost per sale. </p>
 <h3>Simpli</h3>
-<p>Self-service portal for property buyers &amp; sellers, providing full visibility and control, without losing the client-broker relationship. Key feature is online viewing booking, fully integrated with the broker and seller&#39;s calendar (think Calendly, but with 3 parties to coordinate) - 167k viewings booked in 2018-2019 without the back-and-forth. Includes fully online mortgate orgination and pre-approval with no paperwork. CSAT score of 84. </p>
+<p>Self-service portal for property buyers &amp; sellers, providing full visibility and control, without losing the client-broker relationship. Key features include online viewing booking, fully integrated with the broker and seller&#39;s calendar (think Calendly, but with 3 parties to coordinate) and online mortgage orgination and pre-approval with no paperwork, integrated with major banks. CSAT score of 84. </p>
 </section><section id="testimonials"><h1 id="testimonials">Testimonials</h1>
+<p class="period">Contactable references available on request</p>
 <h3>Co-founder of Leadhome</h3>
 <blockquote>
 <p>John impressed from the start with his passion for technology, his broad knowledge of software systems, and his ability to take complex problems and turn them into actionable plans for implementation. He is dedicated, hard working and extremely smart. Beyond his technical skills, he also understands the business context and can act as an effective bridge between technology, business, sales, operations and marketing. He is as comfortable in a room of venture capitalists or sales people as he is with a team of developers. </p>

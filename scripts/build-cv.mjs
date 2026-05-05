@@ -46,6 +46,14 @@ function redact(md) {
   return out;
 }
 
+// ─── Shorten bare URLs to short labelled links ─────────────────────
+function shortenLinks(md) {
+  return md.replace(
+    /\blinkedin\.com\/in\/([^\s|)\]]+)/gi,
+    '[linkedin](https://linkedin.com/in/$1)'
+  );
+}
+
 // ─── H1 metadata for nav + section ids ─────────────────────────────
 function extractH1s(md) {
   const result = [];
@@ -141,16 +149,16 @@ async function generatePDF(htmlPath, pdfPath) {
 // ─── Build ─────────────────────────────────────────────────────────
 async function build() {
   const source = await readFile(SOURCE, 'utf-8');
-  const redacted = redact(source);
+  const md = shortenLinks(redact(source));
 
   await mkdir(OUT_DIR, { recursive: true });
-  await writeFile(OUT_MD, redacted);
+  await writeFile(OUT_MD, md);
   console.log(`  → ${OUT_MD}`);
 
-  const h1s = extractH1s(redacted);
+  const h1s = extractH1s(md);
 
   marked.setOptions({ gfm: true, breaks: false });
-  let html = await marked.parse(redacted);
+  let html = await marked.parse(md);
 
   html = applyHeadingIds(html, h1s);
   html = styleHeadingSubtitles(html);

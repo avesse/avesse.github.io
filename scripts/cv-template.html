@@ -346,46 +346,59 @@
       #main { margin-left: 0; }
       .content-wrap { padding: 0; max-width: 100%; }
 
-      body { font-size: 8.75pt; line-height: 1.4; }
+      body { font-size: 9pt; line-height: 1.4; }
 
       section {
         padding-bottom: 0;
-        margin-bottom: 0.9rem;
+        margin-bottom: 0.35rem;
         border-bottom: none;
       }
       section:last-child { padding-bottom: 0; }
 
       h1 {
         color: #111;
-        font-size: 0.85rem;
-        margin: 0 0 0.5rem;
+        font-size: 0.95rem;
+        margin: 0 0 0.7rem;
       }
 
-      h2 { font-size: 0.85rem; margin: 0.75rem 0 0; }
-      h3 { font-size: 0.7rem; margin: 0.5rem 0 0.2rem; }
+      /* H2 keeps a touch of padding below */
+      h2 { font-size: 0.85rem; margin: 0.45rem 0 0.25rem; }
+      h3 { font-size: 0.72rem; margin: 0.55rem 0 0.15rem; color: --var(--text); }
 
-      p { margin-bottom: 0.3rem; }
-      ul { margin-bottom: 0.35rem; padding-left: 1rem; }
-      li { margin-bottom: 0.02rem; }
+      /* Body paragraphs slightly smaller, with breathing room between */
+      p { font-size: 0.78rem; margin-bottom: 0.32rem; }
+      ul { margin-bottom: 0.32rem; padding-left: 1rem; margin-left: 1rem; margin-right: 1rem; }
+      li { font-size: 0.78rem; margin-bottom: 0.03rem; }
 
-      .period { margin-bottom: 0.2rem; font-size: 0.65rem; }
+      .period { margin-bottom: 0.15rem; font-size: 0.7rem; font-style: italic; }
 
-      table { margin: 0.15rem 0 0.55rem; }
-      table th, table td { padding: 0.1rem 1rem 0.1rem 0; font-size: 0.72rem; }
+      table { margin: 0.08rem 0 0.25rem; }
+      table th, table td { padding: 0.06rem 1rem 0.06rem 0; font-size: 0.72rem; }
       table th { font-size: 0.62rem; }
 
-      blockquote { margin: 0.35rem 0 0.7rem; padding: 0 0 0 0.85rem; }
-      blockquote p { font-size: 0.72rem; line-height: 1.5; margin-bottom: 0.25rem; }
+      /* Testimonials larger, tightly packed */
+      blockquote { margin: 0.8rem 0 0.8rem; padding: 0 0 0 0.85rem; }
+      blockquote p { font-size: 0.8rem; line-height: 1.4; margin-bottom: 0.2rem; }
 
       /* Two-column lists in the intro to save space */
       #john-murray ul { columns: 2; column-gap: 1.5rem; }
+      #john-murray h3 { margin-top: 0.7rem; }
+
+      #career h1 { margin-top: 1.3rem; }
+
+      #recent-projects h2 { margin-top: 1.1rem; }
+      #recent-projects p { font-size: 0.72rem; margin-bottom: 0.5rem; }
 
       a { color: #111; }
 
       table, blockquote { page-break-inside: avoid; }
       h2, h3 { page-break-after: avoid; }
 
-      @page { size: A4; margin: 1.2cm 1.4cm; }
+      /* Each major section starts a new page (intro+career flow together) */
+      #recent-projects { page-break-before: always; }
+      #testimonials { page-break-before: always; }
+
+      @page { size: A4; margin: 1.6cm 1.8cm; }
     }
   </style>
 </head>
