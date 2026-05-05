@@ -61,7 +61,7 @@
     /* ── Sidebar ── */
     #sidebar {
       position: fixed;
-      top: 0; left: 0;
+      bottom: 0; left: 0;
       width: var(--sidebar-w);
       height: 100vh;
       height: var(--vh, 100vh);
@@ -311,7 +311,7 @@
     .overlay {
       display: none;
       position: fixed;
-      top: 0; left: 0; right: 0;
+      bottom: 0; left: 0; right: 0;
       height: 100vh;
       height: var(--vh, 100vh);
       background: rgba(0,0,0,0.75);
@@ -440,11 +440,16 @@
 <script>
   // Track real visible viewport height (iOS Safari URL bar collapses on scroll)
   function setVH() {
-    document.documentElement.style.setProperty('--vh', window.innerHeight + 'px');
+    const h = (window.visualViewport && window.visualViewport.height) || window.innerHeight;
+    document.documentElement.style.setProperty('--vh', h + 'px');
   }
   setVH();
   window.addEventListener('resize', setVH);
   window.addEventListener('orientationchange', setVH);
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', setVH);
+    window.visualViewport.addEventListener('scroll', setVH);
+  }
 
   const burger = document.getElementById('burger');
   const sidebar = document.getElementById('sidebar');
