@@ -1,23 +1,25 @@
 # John Murray - Staff Engineer | Technical Lead
 
-Software engineer & technical lead with 18 years' professional experience. 
+Deep expertise and broad experience. Curious, optimistic and pragmatic.
 
-Deep expertise and broad experience in software engineering. Curious, optimistic and pragmatic. I love building and enabling others to build. 
+I love building and enabling others to build. 
 
 ### Experience
 
-- 13y Hands-on software engineering
-- 10y Leadership roles
+18 years' professional experience, including
+
+- 13y Hands-on Software Engineering
+- 10y in Leadership Roles
 - 5y Startup CTO/Founding Engineer
 - 2y Applied AI
 
 ### Expertise
 
-- Technical Leadership
 - Software Engineering & Architecture
 - Databases & Data Modeling
 - DevOps
 - Applied AI
+- Technical Leadership
 - Product Management
 
 **Main technologies:** TypeScript, NodeJS, Python, C#, Claude Code, PostgreSQL, AWS.
@@ -101,11 +103,11 @@ _Feb 2008 - Jan 2011_
 
 _2025 - Present_
 
-Klarna provides APIs to merchants and acquiring partners to integrate its payment methods. Several 100s of engineers contribute to these APIs, making governance a challenge. 
+Klarna provides APIs to merchants and acquiring partners to integrate its payment methods. 100s of engineers contribute to these APIs, making governance a challenge. 
 
-Shipped Claude Code/Claude Agent SDK agents and skills to ensure quality, consistency and up-to-date metadata during development. Improved existing review and approval workflow tools, integrating AI-assisted reviews. Shipped automatic production testing & monitoring. Shipped agents and skills to automatically update documentation according to latest changes and technical writing guidelines. In all, time to production has improved, fewer issues are caught late, and documentation quality has radically improved. 
+Shipped Claude Code/Claude Agent SDK agents and skills to ensure quality and consistency during development. Improved existing review and approval workflow tools, integrating AI-assisted quality assessment. Shipped automatic production testing & monitoring. Wrote agents and skills to automatically update documentation according to latest API changes and technical writing guidelines. Time to production has improved, fewer issues are caught late, and documentation quality has radically improved. 
 
-I'm the lead engineer, directly leading 4 other engineers and coordinating with 8 architects, 7 S&D teams and 24 contributing engineering teams. Besides the direct benefit, it has resulted in a general increased use of agentic coding & review within contributing teams as they learn and see potential for their own work. I'm a regular contributor to Klarna's internal Claude Code community.
+I'm the lead engineer, directly leading 6 other engineers and coordinating with 8 architects, 24 contributing engineering teams, and 7 S&D teams. Besides the direct impact, it has led to increased use of agentic coding & review within contributing teams. I started and regularly contribute to Klarna's internal Claude Code community.
 
 ### Internal Knowledge Graph
 
@@ -117,11 +119,11 @@ I was a leading contributor in creating Klarna's internal knowledge graph, bring
 
 ## Leadhome - 2016-2021
 
-Leadhome is a proptech startup, combining humans and technology in a unique way to deliver a superior service to property buyers and sellers at a much-reduced cost. I joined as employee #1 in 2016, built the MVP as founding engineer - getting us to first revenue - then built and led the engineering/product/data team as CTO. 
+Leadhome was a proptech startup, combining humans and technology in a unique way to deliver a superior service to property buyers and sellers at a much-reduced cost. I joined as employee #1 in 2016, built the MVP as founding engineer - getting us to first revenue - then built and led the engineering/product/data team as CTO. 
+
+### The Team
 
 My proudest achievement is the quality of the team we built. By 2020 it was a team of 25 engineers, designers, and data analysts - lean, cross-functional, innovative, and hyper-focused on customers, delivering products fast and of exceptional quality. In terms of technology, we were far ahead of our local competitors, and nearly on par with the best in the US and UK (the leading proptech markets at the time), but with a fraction of the capital.
-
-**Key products:**
 
 ### Osmosis
 
@@ -129,14 +131,14 @@ End-to-end platform for property brokers - coordinates entire property sale life
 
 ### Simpli
 
-Self-service portal for property buyers & sellers, providing full visibility and control, without losing the client-broker relationship. Key features include online viewing booking, fully integrated with the broker and seller's calendar (think Calendly, but with 3 parties to coordinate) and online mortgage orgination and pre-approval with no paperwork, integrated with major banks. CSAT score of 84. 
+Self-service portal for property buyers & sellers, providing full visibility and control, without losing the client-broker relationship. Key features include online viewing booking, integrated with the broker and seller's calendar (think Calendly, but with 3 parties to coordinate), and online mortgage origination and pre-approval with no paperwork, integrated with major banks. CSAT score of 84. 
 
 
 # Testimonials
 
-_Contactable references available on request_
+Contactable references available on request
 
-### Co-founder of Leadhome
+### Co-founder @ Leadhome
 
 > John impressed from the start with his passion for technology, his broad knowledge of software systems, and his ability to take complex problems and turn them into actionable plans for implementation. He is dedicated, hard working and extremely smart. Beyond his technical skills, he also understands the business context and can act as an effective bridge between technology, business, sales, operations and marketing. He is as comfortable in a room of venture capitalists or sales people as he is with a team of developers. 
 > 

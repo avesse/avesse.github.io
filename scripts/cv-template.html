@@ -13,6 +13,7 @@
       --border: #222;
       --text: #e0e0e0;
       --muted: #777;
+      --quote: #b0b0b0;
       --accent: #7dd3fc;
       --sidebar-w: 240px;
     }
@@ -24,6 +25,7 @@
         --border: #d8d4cc;
         --text: #1a1a1a;
         --muted: #6b6b6b;
+        --quote: #6b6b6b;
         --accent: #0e7490;
       }
     }
@@ -34,6 +36,7 @@
       --border: #222;
       --text: #e0e0e0;
       --muted: #777;
+      --quote: #b0b0b0;
       --accent: #7dd3fc;
     }
 
@@ -43,6 +46,7 @@
       --border: #d8d4cc;
       --text: #1a1a1a;
       --muted: #6b6b6b;
+      --quote: #6b6b6b;
       --accent: #0e7490;
     }
 
@@ -220,6 +224,8 @@
     p {
       font-size: 0.85rem;
       margin-bottom: 0.85rem;
+      text-align: justify;
+      hyphens: auto;
     }
 
     ul {
@@ -274,7 +280,7 @@
     }
 
     blockquote p {
-      color: var(--muted);
+      color: var(--quote);
       font-style: italic;
       font-size: 0.8rem;
       line-height: 1.85;
@@ -321,7 +327,7 @@
     .overlay.visible { display: block; }
 
     /* ── Mobile ── */
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       .burger { display: flex; }
 
       #sidebar {
@@ -335,6 +341,9 @@
       #main { margin-left: 0; }
 
       .content-wrap { padding: 4.5rem 1.5rem 2rem; }
+
+      .title-suffix,
+      #career h2 .role { display: block; }
     }
 
     /* ── Print ── (PDF generation forces light theme + compact layout) */
@@ -345,6 +354,7 @@
         --border: #d8d4cc;
         --text: #1a1a1a;
         --muted: #555;
+        --quote: #555;
         --accent: #0e7490;
       }
 
@@ -389,6 +399,7 @@
       /* Two-column lists in the intro to save space */
       #john-murray ul { columns: 2; column-gap: 1.5rem; }
       #john-murray h3 { margin-top: 0.7rem; }
+      #john-murray p { margin-bottom: 0; }
 
       #career h1 { margin-top: 1.3rem; }
 
